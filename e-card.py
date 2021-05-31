@@ -13,7 +13,7 @@ for i in range(0,9999):
         print("         준비중 입니다")
         continue
     elif modselect == 3:
-        print("")
+        print("역경무뢰 카이지 보고 오세요!")
         continue
     else:
         print("         다시 선택해주세요")
@@ -32,7 +32,7 @@ for x in range(0,111111111):
         print("---------준비중입니다---------")
         continue
 for e in range(0,99):
-    yc = int(input("카드를 골라주세요 1:시민카드 2:황제카드 \n 남은 시민카드[{0}장]".format(aicard)))
+    yc = int(input("카드를 골라주세요 1:시민카드 2:황제카드 \n 남은 시민카드[{0}장]".format(rccard)))
     aicard = randint(1,5)
     if yc == 1:   
         print("당신은 시민 카드를 내셨습니다")
@@ -60,7 +60,7 @@ for e in range(0,99):
         if rccard ==0:
             print("당신의 패배")
             break    
-        if aicard == 1 or 3:
+        if aicard == 1 or 5:
             battlecard = "노예"
             print("상대방이 카드를 고르고 있습니다")
             print("오픈합니다")
